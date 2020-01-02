@@ -1,0 +1,22 @@
+<script type="text/javascript"> 
+	
+	const student = {
+    name: 'John Doe',
+    age: 16,
+    scores: {
+        maths: 74,
+        english: 63,
+        science: 85
+    }
+};
+
+function displaySummary(student) {
+    console.log('Hello, ' + student.name);
+    console.log('Your Maths score is ' + (student.scores.maths || 0));
+    console.log('Your English score is ' + (student.scores.english || 0));
+    console.log('Your Science score is ' + (student.scores.science || 0));
+}
+
+displaySummary(student);
+	
+</script>
